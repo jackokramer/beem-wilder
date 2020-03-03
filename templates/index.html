@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <title>Home</title>
+</head>
+<body>
+    <div class="wrapper">
+    {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+    {% if messages %}                            <!-- check if there are any messages -->
+        {% for message in messages %}            <!-- loop through the messages -->
+            <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+<button type="button" class=" btn btn-outline-dark btn-sm p-2 m-2 text-right"> <a href="/logout">Logout</a></button>
+
+
+    <br>
+    <h1 class="text-center display-5 shadow-lg p-3 mb-5 bg-white rounded ">Beam's Tips and Sources to Better Meditation Practices</h1>
+    <br>
+
+        <h2 class="text-right p-4">Hello {{user_data['first_name']}}</h2>
+    
+        <br>
+    <ul class="nav justify-content-center navbar-dark bg-dark">
+        <li class="nav-item">
+          <h2><a class="nav-link active" href="#!">Home</a></h2>
+        </li>
+        <li class="nav-item">
+          <h2><a class="nav-link" href="/about">About</a></h2>
+        </li>
+        <li class="nav-item">
+          <h2><a class="nav-link" href="/links">Links</a></h2>
+        </li>
+        <li class="nav-item">
+            <h2><a class="nav-link" href="/classes">Classes</a></h2>
+        </li>
+        <li class="nav-item">
+            <h2><a class="nav-link" href="/contact">Contact Me</a></h2>
+        </li>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+      </ul>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col p-4 bg-primary">
+            </div>
+            <h2 class='display-4 shadow-lg p-3 mb-5 bg-white rounded'> Latest News</h2>
+            <div class="col p-4 bg-primary">
+            </div>
+        </div>
+        <br>
+        <div class="w-25 p-3" style="background-color: rgb(255, 255, 255);"><h3 class="display-3 text-center">Updates/New Practices</h3>
+        </div>
+        <br>
+        <div class="jumbotron jumbotron-fluid p-5">
+            <div class="container">
+                <div class="media">
+                    <div class="row mx-md-n5">
+                        
+                    </div>
+                    <div class="media-body">
+                    <h3 class="display-4">New Discoveries and Practices</h3>
+                    <p class="lead">New information will be updated on a montly basis here on the home page. Please stay tuned for new practices or mantras. </p>
+                </div>
+                </div>
+                <div class="card-deck p-3 mb-2 bg-secondary text-white">
+                    <div class="card-body">
+                      <h4 class="card-title text-center display-4">Discourse on Love</h4>
+                      <img src="{{ url_for('static', filename='imgs/buddah.jpeg') }}" alt ='alex grey' style="width:440px;height:250px" class="mx-auto border-dark m-5">
+                      <p class="card-text p-3 m-2">Discourse on Love
+                        “He or she who wants to attain peace should practice being upright, humble, and
+                        capable of using loving speech. He or she will know how to live simply and happily, with
+                        senses calmed, without being covetous and carried away by the emotions of the
+                        majority. Let him or her not do anything that will be disapproved of by the wise ones.“</p>
+                        <p class="card-text p-3 m-2">(And this is what he or she contemplates:).</p>
+                        <p class="card-text p-3 m-2"> “May everyone be happy and safe, and may all hearts be ﬁlled with joy. </p>
+                        <p class="card-text p-3 m-2"> “May all beings live in security and in peace — beings who are frail or strong, tall or short, big or small, invisible or visible, near or faraway, already born, or yet to be born. May all of them dwell in perfect tranquility.</p>
+                        <p class="card-text p-3 m-2"> “Let no one do harm to anyone.  Let no one put the life of anyone in danger.  Let no one, out of anger or ill will, wish anyone any harm.</p>
+                        <p class="card-text p-3 m-2">“Just as a mother loves and protects her only child at the risk of her own life, cultivate boundless love to offer to all living beings in the entire cosmos.  Let our boundless love pervade the whole universe, above, below, and across. Our love will know no obstacles. Our heart will be absolutely free from hatred and enmity. Whether standing or walking, sitting or lying, as long as we are awake, we should maintain this mindfulness of love in our own heart.  This is the noblest way of living."</p>
+                        <p class="card-text p-3 m-2"> “Free from wrong views, greed, and sensual desires, living in beauty and realizing Perfect Understanding, those who practice boundless love will certainly transcend birth and death.” </p>
+                        <p class="card-text p-3 m-2"> [By the ﬁrm determination of this truth,may you ever be well.]</p>  
+                        <h6 class="text-center">Metta Sutta, Sutta Nipata 1.8</h6>
+                    </div>
+                  </div>
+            <div class="p-3 mb-2 bg-info text-dark">
+                    <div class="card-deck ">
+                        <div class="card">
+                            <img src="{{ url_for('static', filename='imgs/unknown.jpeg') }}" alt ='alex grey' style="width:440px;height:250px" class="border border-dark 1px p-2">
+                            <p class="text-center"> Artwork by Alex Grey</p>
+                        </div>
+                        <div class="card">
+                        <img src="{{ url_for('static', filename='imgs/gnome.jpeg') }}" alt ='gnome' style="width:440px;height:250px" class="border border-dark 1px p-3">
+                        </div>
+                    </div>
+            <br>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <div class="media">
+                        <div class="media-body">
+                            <h3 class="display-4 text-center">Just like Me <h4 class="text-center">by Ramdas</h4></h3>
+                            <br>
+                            <p class="lead">
+                                <div class="modal-body">
+                                    <p class="lead">Ask participants to sit in pairs and guide them with this script.
+                                        You can also ask them to stand in two lines, facing each other; after completing the exercise
+                                        with one partner, the line moves up by one and the exercise is repeated with another
+                                        partner. This increases the understanding that all others are “just like me.” This practice
+                                        can also be done alone, by bringing to mind a friend, a colleague, a neutral person, or a
+                                        difficult person. Or it can be done silently, when meeting someone new. You can use any or
+                                        all of these phrases, or any that seem more appropriate for the group.
+                                        The Instructions: Become aware that there is a person in front of you. A fellow human being,
+                                        just like you.</p>
+                                        <br>
+                                        <ul>
+                                            <p>
+                                            Now silently repeat these phrases, while looking at your partner.</p>
+                                            <li>
+                                                <p>This person has a body and a mind, just like me. </p>
+                                                </li>
+                                            <li>
+                                                <p>This person has feelings, emotions and thoughts, just like me. </p>
+                                            </li>
+                                            <li>
+                                                <p>This person has in his or her life, experienced physical and emotional pain and
+                                            suffering, just like me. </p>
+                                            </li>
+                                            <li>
+                                                <p>This person has at some point been sad, disappointed, angry, or hurt, just like me.</p>
+                                            </li>
+                                            <li>
+                                                <p>This person has felt unworthy or inadequate, just like me.</p>
+                                            </li>
+                                            <li>
+                                                <p>This person worries and is frightened sometimes, just like me.</p>
+                                            </li>
+                                            <li>
+                                                <p>This person has longed for friendship, just like me.</p>
+                                            </li>
+                                            <li>
+                                                <p>This person is learning about life, just like me.</p>
+                                            </li>
+                                            <li>
+                                                <p>This person wants to be caring and kind to others, just like me.</p>
+                                            </li>
+                                             <li>
+                                                 <p>This person wants to be content with what life has given, just like me.</p>
+                                            </li>
+                                            <li>
+                                                <p>This person wishes to be free from pain and suffering, just like me. </p>
+                                            </li>
+                                            <li>
+                                                <p>This person wishes to be safe and healthy, just like me. </p>
+                                            </li>
+                                            <li>
+                                                <p>This person wishes to be happy, just like me.</p>
+                                            </li>
+                                            <li>
+                                                <p>This person wishes to be loved, just like me.</p>
+                                            </li>
+                                        </ul>
+                                        <br>
+                                        <h5>Now, allow some wishes for well-being to arise: I wish that this person have the
+                                        strength, resources, and social support to navigate the difficulties in life with ease.</h5>
+                                            <p>I wish that this person be free from pain and suffering. </p>
+                                            <p>I wish that this person be peaceful and happy. I wish that this person be loved.</p>
+                                        <h4>Because this person is a fellow human being, just like me.</h4>
+                                </div>
+                        </div>
+                    </div>
+                    <img src="{{ url_for('static', filename='imgs/pexels.jpeg') }}" alt ='gnome' style="width:550px;height: 300px" class="border border-dark 1px p-2 border border-dark 1px p-2 rounded mx-auto d-block">
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer font-small blue pt-4">
+    <p class="text-center">Copyright © 2020 JQK. The JQK is not responsible for the content of external sites.</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>About Me</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}     <!-- declare a variable called messages -->
+    {% if messages %}                            <!-- check if there are any messages -->
+        {% for message in messages %}            <!-- loop through the messages -->
+            <p>{{message}}</p>                   <!-- display each message in a paragraph tag -->
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+    <button type="button" class=" btn btn-outline-dark btn-sm p-2 m-2 text-right"> <a href="/logout">Logout</a></button>
+    <h1 class="text-center display-3 shadow-lg p-3 mb-5 bg-white rounded">About Beem</h1>
+        <div class="jumbotron p-8">
+            <div class="container-fluid">
+                <!-- A fluid container that uses the full witdh -->
+            <img src="{{ url_for('static', filename='imgs/0.jpg') }}" alt ='gnome' style="width:300px;height:350px" class="border border-dark 1px p-2 rounded mx-auto d-block">
+                <h3 class="text-center p4 m-3">Beem Wilder</h3>
+                <h5 class="text-center">Ph.D. – My background as a Meditation Teacher and Psychologist</h5>
+                <p class="lead p-2 m-3">In the early 1970’s I left my home in Los Gatos California and traveled around the world
+                    for two years, mostly overland, and started my meditation and yoga practice in a small
+                    yoga ashram in Rishikesh India. After returning home I was initiated by Bhagavan
+                    Nityananda and I traveled to Ganeshpuri India and became a student of Nityananda’s
+                    disciple, Swami Muktananda. I stayed with Swami Muktananda for 12 years and was
+                    often the temple drummer during chanting (kirtan) and was his personal driver for
+                    several years. In the early 1990’s I practiced and trained with Gen Khandro in the
+                    Tibetan Buddhist tradition for five years and was authorized to teach meditation and
+                    trainings. Since 2000 I have been a student of Thich Nhat Hanh in the Zen tradition and
+                    was ordained in the Order of Interbeing (OI) in 2012. My wife Sally and I have had a
+                    meditation center in our home for the last 20 years and host monthly daylong practice
+                    sessions for other OI members. As a child psychologist at Kaiser Permanente, I started
+                    a family meditation program and also taught patients and staff meditation in the hospital
+                    until my retirement from Kaiser three years ago. As a meditation teacher I honor and
+                    incorporate teachings from many world traditions and especially the Zen Buddhist
+                    tradition and the teachings of Ramana Maharshi and Sri Ramakrishna. I provide
+                    consultation and trainings in mindfulness and meditation and teach weekly meditation
+                    classes in several locations and also teach in the business and medical settings.</p>
+                    <p class="lead p-2 m-3">I am profoundly aware of the power of spiritual practices such as yoga and meditation to transform negative mental states and to create a path of lifelong healing and healthy
+                    self-actualization. The core teaching is, “We already have what we are looking for- it is
+                    just covered up”. Spiritual practice lets the covering dissolve so our true light of being can shine out.</p>
+                    <p class="lead p-4 m-3">In my personal life I am a father with two grown children.  I have travelled extensively and lived outside of the United States including five years living in India.  I can converse and read fairly well in Spanish and am studying so that I can teach meditation in
+                    Spanish. I enjoy surfing, biking, riding my one-wheel pint, meditating, creating mosaics,and hiking with my wife Sally. Sally and I have been practicing meditation together for almost 50 years and she and I often co-facilitate meditation trainings and classes.</p>
+                <hr class="my-2">
+                <h6 class = "p-2 m-3 text-center">As a clinical psychologist I see clients in my office in Los Gatos working with individuals, families, teens and young adults.</h6>
+                <h5 class='text-center'>Email: <a href="mailto:beemwilder@gmail.com">beemwilder@gmail.com</a></h5>
+                <h5 class=" text-center p-1">Phone Number: <a href="tel:+1-408-348-3600">+1-408-348-3600</a></h5>
+                <p class="lead">
+                <a class="btn btn-primary btn-lg" href="/contact" role="button">Shoot Beem A Message</a>
+                </p>
+        </div>
+    </div>
+        <br>
+    <nav class="navbar fixed-bottom navbar-dark bg-primary">
+        <a class="navbar-brand" href="/success">Home</a>
+        <a class="navbar-brand" href="/#!">About Me</a>
+        <a class="navbar-brand" href="/links">Links</a>
+        <a class="navbar-brand" href="/contact">Contact Me</a>
+        <a class="navbar-brand" href="/classes">Classes</a>
+    </nav>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/d3js/5.15.0/d3.min.js"></script>
+</html>
