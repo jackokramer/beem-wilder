@@ -51,10 +51,10 @@
                   <p class="text-center p-2"></p>
               </div>
             </div>
-            <div class="card-deck">
-            </div>
-            </div> <!--Continue here-->
-              
+        </div>
+        <div class="card-deck">
+          <img src="{{ url_for('static', filename='imgs/sea.jpeg')}}" alt="seaside" style="width: 500px; height: 200px;" class="img-center">
+        </div>
         </div>
         <div class="card-group">
           <div class="card">
@@ -78,75 +78,79 @@
             <div class="card-body">
               <h4 class="bold display-4 text-center">Offering Mandala</h4>
               <p class="card-text">
-                <p>(Hands in Prayer or Mandala Offering)</p>
-                The Earth vast and nourishing. The Sky, Wind, Great Mountains, Forests, Seas, Rivers, and
-                Living Beings. May everyone enjoy this precious life and all of its blessings.
-                I offer gladly without any sense of loss the objects of craving, desire, and hatred. Ego, sense
-                of a separate self, friends, enemies, strangers, my body and possessions. Please accept
-                these in the great letting go and open me and all beings to True Love, Compassion, Joy, and
-                Inclusiveness. Gate, Gate, Paragate, Parasamgate, Bodhi Svaha.</p>
+                <h6 class="text-center">(Hands in Prayer or Mandala Offering)</h6>
+                <ul> 
+                  <li class ="m-4">The Earth vast and nourishing. The Sky, Wind, Great Mountains, Forests, Seas, Rivers, and Living Beings.</li>
+                  <li class ="m-4">May everyone enjoy this precious life and all of its blessings.</li>
+                  <li class ="m-4"> I offer gladly without any sense of loss the objects of craving, desire, and hatred. 
+                  <li class ="m-4"> Ego, sense of a separate self, friends, enemies, strangers, my body and possessions.</li> 
+                  <li class ="m-4">Please accept these in the great letting go and open me and all beings to True Love, Compassion, Joy, and Inclusiveness.</li>
+                </ul> 
+                <p class="bold text-center"> Gate, Gate, Paragate, Parasamgate, Bodhi Svaha.</p></p>
             </div>
           </div>
         </div>
+          <br>
             <div class="container">
-            <h1 class="display-3"> Additional Resources and Practices</h1>
+            <h1 class="display-3 text-center"> Additional Resources and Practices</h1>
             <br>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-                Launch demo modal
-              </button>
-              
-              <!-- Modal -->
-              <div class="modal" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-scrollable" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalCenteredLabel">Modal title</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+              Launch demo modal
+            </button>
+            
+            <!-- Modal --NOT WORKING ATM -->
+            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
                     <div class="modal-body">
-                        <p>Ask participants to sit in pairs and guide them with this script.
-                            You can also ask them to stand in two lines, facing each other; after completing the exercise
-                            with one partner, the line moves up by one and the exercise is repeated with another
-                            partner. This increases the understanding that all others are “just like me.” This practice
-                            can also be done alone, by bringing to mind a friend, a colleague, a neutral person, or a
-                            difficult person. Or it can be done silently, when meeting someone new. You can use any or
-                            all of these phrases, or any that seem more appropriate for the group.
-                            The Instructions: Become aware that there is a person in front of you. A fellow human being,
-                            just like you.</p>
-                            <br>
-                                <p>
-                                Now silently repeat these phrases, while looking at your partner.</p>
-                                <p>This person has a body and a mind, just like me. </p>
-                                <p>This person has feelings, emotions and thoughts, just like me. </p>
-                                <p>This person has in his or her life, experienced physical and emotional pain and
-                                suffering, just like me. </p>
-                                <p>This person has at some point been sad, disappointed, angry, or hurt, just like me.</p>
-                                <p>This person has felt unworthy or inadequate, just like me.</p>
-                                <p>This person worries and is frightened sometimes, just like me.</p>
-                                <p>This person has longed for friendship, just like me.</p>
-                                <p>This person is learning about life, just like me.</p>
-                                <p>This person wants to be caring and kind to others, just like me.</p>
-                                <p>This person wants to be content with what life has given, just like me.</p>
-                                <p>This person wishes to be free from pain and suffering, just like me. </p>
-                                <p>This person wishes to be safe and healthy, just like me. </p>
-                                <p>This person wishes to be happy, just like me.</p>
-                                <p>This person wishes to be loved, just like me.</p>
-                            <h5>Now, allow some wishes for well-being to arise: I wish that this person have the
-                            strength, resources, and social support to navigate the difficulties in life with ease.</h5>
-                                <p>I wish that this person be free from pain and suffering. </p>
-                                <p>I wish that this person be peaceful and happy. I wish that this person be loved.</p>
-                            <h4>Because this person is a fellow human being, just like me.</h4>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
+                      <p>Ask participants to sit in pairs and guide them with this script.
+                          You can also ask them to stand in two lines, facing each other; after completing the exercise
+                          with one partner, the line moves up by one and the exercise is repeated with another
+                          partner. This increases the understanding that all others are “just like me.” This practice
+                          can also be done alone, by bringing to mind a friend, a colleague, a neutral person, or a
+                          difficult person. Or it can be done silently, when meeting someone new. You can use any or
+                          all of these phrases, or any that seem more appropriate for the group.
+                          The Instructions: Become aware that there is a person in front of you. A fellow human being,
+                          just like you.</p>
+                          <br>
+                              <p>
+                              Now silently repeat these phrases, while looking at your partner.</p>
+                              <p>This person has a body and a mind, just like me. </p>
+                              <p>This person has feelings, emotions and thoughts, just like me. </p>
+                              <p>This person has in his or her life, experienced physical and emotional pain and
+                              suffering, just like me. </p>
+                              <p>This person has at some point been sad, disappointed, angry, or hurt, just like me.</p>
+                              <p>This person has felt unworthy or inadequate, just like me.</p>
+                              <p>This person worries and is frightened sometimes, just like me.</p>
+                              <p>This person has longed for friendship, just like me.</p>
+                              <p>This person is learning about life, just like me.</p>
+                              <p>This person wants to be caring and kind to others, just like me.</p>
+                              <p>This person wants to be content with what life has given, just like me.</p>
+                              <p>This person wishes to be free from pain and suffering, just like me. </p>
+                              <p>This person wishes to be safe and healthy, just like me. </p>
+                              <p>This person wishes to be happy, just like me.</p>
+                              <p>This person wishes to be loved, just like me.</p>
+                          <h5>Now, allow some wishes for well-being to arise: I wish that this person have the
+                          strength, resources, and social support to navigate the difficulties in life with ease.</h5>
+                              <p>I wish that this person be free from pain and suffering. </p>
+                              <p>I wish that this person be peaceful and happy. I wish that this person be loved.</p>
+                          <h4>Because this person is a fellow human being, just like me.</h4>
+                  </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                   </div>
                 </div>
               </div>
-
+            </div>
             <p class="lead">Some links and videos to garner a better understanding of what we do.</p>
             <br>
             <br>
