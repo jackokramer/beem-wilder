@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <title>Home</title>
+    <title>Home page</title>
 </head>
 <body>
     <div class="wrapper">
@@ -66,7 +66,7 @@
             </div>
         </div>
         <br>
-        <div class="w-25 p-3" style="background-color: rgb(255, 255, 255);"><h3 class="display-3 text-center">Updates/New Practices</h3>
+        <div class="w-25 p-3" style="background-color: rgb(255, 255, 255)"><h3 class="display-3 text-center">Updates/New Practices</h3>
         </div>
         <br>
         <div class="jumbotron jumbotron-fluid p-5">
@@ -96,17 +96,20 @@
                         <p class="card-text p-3 m-2">“Just as a mother loves and protects her only child at the risk of her own life, cultivate boundless love to offer to all living beings in the entire cosmos.  Let our boundless love pervade the whole universe, above, below, and across. Our love will know no obstacles. Our heart will be absolutely free from hatred and enmity. Whether standing or walking, sitting or lying, as long as we are awake, we should maintain this mindfulness of love in our own heart.  This is the noblest way of living."</p>
                         <p class="card-text p-3 m-2"> “Free from wrong views, greed, and sensual desires, living in beauty and realizing Perfect Understanding, those who practice boundless love will certainly transcend birth and death.” </p>
                         <p class="card-text p-3 m-2"> [By the ﬁrm determination of this truth,may you ever be well.]</p>  
-                        <h6 class="text-center">Metta Sutta, Sutta Nipata 1.8</h6>
+                        <footer class="blockquote-footer text-white p-3">Metta Sutta  
+                            <cite title="Source Title text-white">Metta Sutta, Sutta Nipata 1.8</cite>
                     </div>
                   </div>
             <div class="p-3 mb-2 bg-info text-dark">
                     <div class="card-deck ">
                         <div class="card">
-                            <img src="{{ url_for('static', filename='imgs/unknown.jpeg') }}" alt ='alex grey' style="width:440px;height:250px" class="border border-dark 1px p-2">
-                            <p class="text-center"> Artwork by Alex Grey</p>
+                            <img src="{{ url_for('static', filename='imgs/unknown.jpeg') }}" alt ='alex grey' style="width:440px;height:250px" class="border border-dark 1px p-2 mx-auto">
+                            <footer class="blockquote-footer m-2 p-3 text-center">Alex Grey
+                                <cite title="Soure Title">alexgrey.com</cite>
+                            </footer>
                         </div>
                         <div class="card">
-                        <img src="{{ url_for('static', filename='imgs/gnome.jpeg') }}" alt ='gnome' style="width:440px;height:250px" class="border border-dark 1px p-3">
+                        <img src="{{ url_for('static', filename='imgs/gnome.jpeg') }}" alt ='gnome' style="width:440px;height:250px" class="border border-dark 1px p-3 m-2 mx-auto">
                         </div>
                     </div>
             <br>
@@ -114,7 +117,7 @@
                 <div class="container">
                     <div class="media">
                         <div class="media-body">
-                            <h3 class="display-4 text-center">Just like Me <h4 class="text-center">by Ramdas</h4></h3>
+                            <h3 class="display-4 text-center">Just like Me <footer class="blockquote-footer  p-3">Ramdas</footer></h3>
                             <br>
                             <p class="lead">
                                 <div class="modal-body">
