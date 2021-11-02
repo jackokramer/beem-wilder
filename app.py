@@ -2,7 +2,7 @@ from flask import Flask, session, redirect, render_template, request, flash
 from mysqlconnect import connectToMySQL
 from flask_bcrypt import Bcrypt
 import re
-##import pylint
+##import pylint##
 app = Flask(__name__)
 bcrypt = Bcrypt(app)
 app.secret_key = 'shrimpy'
